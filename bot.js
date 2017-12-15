@@ -88,22 +88,6 @@ if(message.content == '?coditruth') {
 
 }
 
-if(message.content == '!away') {
-	var request = require('request');
-	request.get({
-    url: 'http://fusionradio.uk/discord/index.php',
-    json: true,
-    headers: {'User-Agent': 'Fusion BOT '}
-  }, (err, res, data) => {
-    if (err) {
-      console.log('Error:', err);
-    } else if (res.statusCode !== 200) {
-      console.log('Status:', res.statusCode);
-    } else { 
- 
-	  message.channel.sendMessage('Those people are currently away: ' + data.username );
-       }
-
 });
 	}
 });
