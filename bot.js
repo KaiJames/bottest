@@ -18,8 +18,8 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === 'coditruth') {
-    	message.reply('He has a Small Peeni... >.> <.< shhhhh its a secret!!!!');
+    if (message.content === '?coditruth') {
+    	message.channel.sendMessage('He has a Small Peeni... >.> <.< shhhhh its a secret!!!!');
   	}
 });
 
