@@ -25,6 +25,21 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+if(message.content == '.Beats') {
+	  message.channel.send('Beats is one of three Founders of Infinite, He is random, outgoing and knows what he is doing!');
+	  
+	  	}
+});
+
+client.on('message', message => {
+if(message.content == '.Codi') {
+	  message.channel.send('Codi is one of three Founders of Infinite, He smells thats all you need to know.');
+	  
+	  	}
+});
+
+
 client.on('message',message => {
 	if(message.content == '.list') {
 		message.channel.send('---------------- Commands List ----------------');
