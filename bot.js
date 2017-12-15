@@ -18,8 +18,6 @@ client.on('message', message => {
     
     });
 client.on('message',message => {
-	if(message.author.bot){ return;}
-	console.log('Message from ' + message.author.username + '#'+ message.author.discriminator + '\n Saying: ' + message.content);
 	if(message.content == '!list') {
 		message.channel.sendMessage('---------------- Commands List ----------------');
 		message.channel.sendMessage('!stats -- Show current radio stats.');
