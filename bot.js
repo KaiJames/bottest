@@ -48,7 +48,7 @@ client.on('message',message => {
 		message.channel.send('.about -- Information of BOT.');
 		message.channel.send('.panel -- Panel link');
 		message.channel.send('.Kai -- Information about Kai');
-		message.channel.send('.Beats -- Information about Codi');
+		message.channel.send('.Beats -- Information about Beats');
 		message.channel.send('.Codi -- Information about Codi');
 	}
     
