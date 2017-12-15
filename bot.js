@@ -54,6 +54,7 @@ client.on('message',message => {
     
 });
 
+client.on('message',message => {
 if(message.content == '.panel') {
 	  message.channel.send('http://infiniteradio.net/staff \n Enjoy! :yum: ');
 	  
