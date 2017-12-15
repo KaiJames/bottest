@@ -77,6 +77,15 @@ if(message.content == '.coditruth') {
   }
 
 });
+
+
+client.on('message',message => {
+if(message.content == '.codex') {
+	  message.channel.send('#couplegoals :heart_eyes:');
+	  
+  }
+
+});
     
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
