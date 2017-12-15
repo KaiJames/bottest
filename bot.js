@@ -69,6 +69,14 @@ if(message.content == '.about') {
 	 message.channel.send('All rights reserved to respective owners. The Official bot of Infiniteradio.net');
   }
 	});
+
+client.on('message',message => {
+if(message.content == '.coditruth') {
+	  message.channel.send('He has a Small Peeni... >.> <.< shhhhh its a secret!!!!');
+	  
+  }
+
+});
     
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
