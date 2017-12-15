@@ -117,7 +117,7 @@ request.get({
       message.channel.send('Listener Peak of this user: '+ data.icestats.source[1].listener_peak +'\n');
       message.channel.send('List of commands: say !list');
        }
-       }
+       
 });
     
 // THIS  MUST  BE  THIS  WAY
