@@ -29,16 +29,12 @@ client.on('message',message => {
 	if(message.content == '.list') {
 		message.channel.send('---------------- Commands List ----------------');
 		message.channel.send('.stats -- Show current radio stats.');
-		sleep(500);
 		message.channel.send('.list -- Shows this message.');
 		message.channel.send('.about -- Information of BOT.');
-		sleep(500);
 		message.channel.send('.panel -- Panel link');
-		sleep(1000);
 		message.channel.send('.Kai -- Information about Kai');
 		message.channel.send('.Beats -- Information about Codi');
 		message.channel.send('.Codi -- Information about Codi');
-		sleep(500);
 	}
     
 });
