@@ -18,7 +18,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === '!kai') {
+    if (message.content === '.Kai') {
     	message.channel.send('Kai is one of three Founders of Infinite! They do coding stuff and radio stuff too! They are a wired human who justs likes to have fun!');
   	}
 });
