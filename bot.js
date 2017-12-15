@@ -61,6 +61,14 @@ if(message.content == '.panel') {
   }
 
 });
+client.on('message',message => {
+if(message.content == '.about') {
+	  message.channel.send('------------------------- Information of Infinite BOT ------------------------- \n');
+	 message.channel.send('Version : v1.0\n');
+	 message.channel.send('Author : @Kai#8589\n');
+	 message.channel.send('All rights reserved to respective owners. The Official bot of Infiniteradio.net');
+  }
+	});
     
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
