@@ -19,17 +19,17 @@ client.on('message', message => {
     });
 client.on('message',message => {
 	if(message.content == '!list') {
-		message.channel.sendMessage('---------------- Commands List ----------------');
-		message.channel.sendMessage('!stats -- Show current radio stats.');
+		message.reply('---------------- Commands List ----------------');
+		message.reply('!stats -- Show current radio stats.');
 		sleep(500);
-		message.channel.sendMessage('!list -- Shows this message.');
-		message.channel.sendMessage('!about -- Information of BOT.');
+		message.reply('!list -- Shows this message.');
+		message.reply('!about -- Information of BOT.');
 		sleep(500);
-		message.channel.sendMessage('!panel -- Panel link');
+		message.reply('!panel -- Panel link');
 		sleep(1000);
-		message.channel.sendMessage('!Kai -- Information about Kai');
-		message.channel.sendMessage('!Beats -- Information about Codi');
-		message.channel.sendMessage('!Codi -- Information about Codi');
+		message.reply('!Kai -- Information about Kai');
+		message.reply('!Beats -- Information about Codi');
+		message.reply('!Codi -- Information about Codi');
 		sleep(500);
 	}
 });
