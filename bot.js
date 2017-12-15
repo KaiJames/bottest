@@ -87,38 +87,6 @@ if(message.content == '.codex') {
 
 });
 
-client.on('message',message => {
-
-if(message.content == '.stats')		
-var url = 'http://centauri.shoutca.st:8368/status-json.xsl';
-var request = require('request');
-request.get({
-    url: url,
-    json: true,
-    headers: {'User-Agent': 'Infinite BOT '}
-  }, (err, res, data) => {
-    if (err) {
-      console.log('Error:', err);
-    } else if (res.statusCode !== 200) {
-      console.log('Status:', res.statusCode);
-    } else { 
-	if(typeof data.icestats.source[1].title == 'undefined') {  
-	  message.channel.send('Current Song: '+ data.icestats.source[0].title +  '\n');
-      message.channel.send('Current DJ: Infinite Stream\n');
-      message.channel.send('Listeners: '+ data.icestats.source[0].listeners +'\n');
-      message.channel.send('Listener Peak of this user: '+ data.icestats.source[0].listener_peak +'\n');
-
-      
-	} else {
-      // data is already parsed as JSON:
-      message.channel.send('Current Song:'+ data.icestats.source[1].title +  '\n');
-      message.channel.send('Current DJ:'+ data.icestats.source[1].genre +'\n');
-      message.channel.send('Listeners: '+ data.icestats.source[1].listeners +'\n');
-      message.channel.send('Listener Peak of this user: '+ data.icestats.source[1].listener_peak +'\n');
-      message.channel.send('List of commands: say !list');
-       }
-       
-});
     
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
