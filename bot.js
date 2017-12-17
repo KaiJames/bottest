@@ -95,6 +95,15 @@ if(message.content == '.Carrie') {
 
 });
 
+
+client.on('message',message => {
+if(message.content == 'fart') {
+	  message.channel.send('*pffftttt* oopsy :flushed:');
+	  
+  }
+
+});
+
     
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
