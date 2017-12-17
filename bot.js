@@ -87,6 +87,14 @@ if(message.content == '.codex') {
 
 });
 
+client.on('message',message => {
+if(message.content == '.Carrie') {
+	  message.channel.send('I Dont know who she is :confounded: Sorry Im silly like that! (shes codis friend right?) ');
+	  
+  }
+
+});
+
     
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
